@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.perritosapk.pojo.BreedEntity
 import com.example.perritosapk.pojo.ImagesBreed
 
-@Database(entities = [BreedEntity::class, ImagesBreed::class],version = 1)
+@Database(entities = [BreedEntity::class,ImagesBreed::class],version = 1)
 
 abstract class DogDataBase : RoomDatabase() {
     abstract fun getDogDao() : DogDao
@@ -23,7 +23,7 @@ abstract class DogDataBase : RoomDatabase() {
             synchronized(this) {
                 val instance = Room.databaseBuilder(context.applicationContext,
                     DogDataBase::class.java,
-                    "marsDB")
+                    "dogDb")
                     .build()
                 INSTANCE = instance
                 return instance

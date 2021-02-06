@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.perritosapk.WrapperImg
 import com.example.perritosapk.pojo.BreedEntity
 import com.example.perritosapk.pojo.ImagesBreed
 
