@@ -27,8 +27,10 @@ private var mlistDog = listOf<BreedEntity>()
     View.OnClickListener{
 
     fun bind (breedEntity: BreedEntity){
-    binding.btnBreed.text = breedEntity.breed
+    binding.btnBreed.setText(breedEntity.breed)
         itemView.setOnClickListener(this)
+
+        
 }
 
 
@@ -36,6 +38,7 @@ private var mlistDog = listOf<BreedEntity>()
 
        selectedDogBreed.value = mlistDog[adapterPosition]
         Log.d("click","perros")
+
     }
 
 

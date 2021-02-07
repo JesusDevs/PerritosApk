@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/purple"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.SecondFragment">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/breed2img"
+        android:id="@+id/imgBreed"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <TextView
-        android:id="@+id/breed2"
+        android:id="@+id/breedSeond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="26dp"
         android:text="@string/textview"
-        android:textColor="#ACD7E8"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:typeface="normal"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/breed2img"
-        app:drawableLeftCompat="@drawable/ic_dog2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBreed" />
 </androidx.constraintlayout.widget.ConstraintLayout>

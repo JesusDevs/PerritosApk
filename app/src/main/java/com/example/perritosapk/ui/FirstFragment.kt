@@ -47,7 +47,7 @@ private val viewModel : DogViewModel by activityViewModels()
                 viewModel.selectedDog(it)
                 val bundle =Bundle()
                 bundle.putString("breed",it.breed)
-                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+                findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment,bundle)
             }
         })
         }

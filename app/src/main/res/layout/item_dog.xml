@@ -7,20 +7,23 @@
 
     <TextView
         android:id="@+id/btnBreed"
-        android:layout_width="373dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="344dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/ic_dog2"
         android:fontFamily="sans-serif-medium"
         android:lineSpacingExtra="18sp"
         android:text="@string/breed"
-        android:textAlignment="center"
+        android:textAlignment="gravity"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#331313"
+        android:textColor="#ACD7E8"
         android:textSize="24sp"
         android:textStyle="bold"
+
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
